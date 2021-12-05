@@ -1,0 +1,132 @@
+.inicio {
+    background-image: url(../img/fundo1.jpg);
+    display: flex;
+    object-fit: cover;
+}
+
+.secao-destaque {
+    border-radius: 25px;
+    padding: 50px 20px 220px 80px;
+}
+
+.titulo {
+    color: var(--titulo-inicio);
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
+.destaque {
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+/*Cores usadas nos titulos para dar destaque*/
+.cor-diferente {
+    color: var(--cor-span);
+}
+
+.cor-especifica {
+    color: var(--branco);
+}
+
+/*Botao*/
+.botao {
+    background-color: var(--verde-edutech);
+    border: 1px solid var(--verde-edutech);
+    border-radius: 5px;
+    color: var(--branco);
+    font-size: 28px;
+    max-width: 20em;
+    padding: 15px 20px 15px 20px;
+    transition: all .4s ease-in-out;   
+}
+
+.botao:hover {
+    background-color: var(--verde-edutech-hover);
+    border: 1px solid var(--verde-edutech-hover);
+}
+
+/*Fotos*/
+.foto {
+    border-radius: 100%;
+    transition: all .5s ease-in-out;
+}
+
+.foto:hover {
+    opacity: 0.5;
+}
+
+/*mobile*/
+@media screen and (min-width: 0) {
+    .inicio {
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+        padding: 0 0 70px 0;
+    }
+    .secao-destaque {
+        padding: 130px 5px 20px 40px;
+    }
+    .botao {
+        margin: 20px 0 20px 10px;
+    }
+    .secao-imagens {
+        display: flex;
+    }
+    .foto {
+        margin: 0 20px 0 5px;
+        width: 120px;
+    }
+    .foto:first-child {
+        margin: 0 20px 0 25px;
+    }
+}
+
+/*tablet*/
+@media screen and (min-width: 768px) {
+    .inicio {
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        padding: 0 0 70px 0;
+    }
+    .secao-destaque {
+        padding: 130px 5px 20px 40px;
+    }
+    .botao {
+        margin: 20px 0 20px 80px;
+    }
+    .secao-imagens {
+        display: flex;
+    }
+    .foto {
+        margin: 0 20px 0 5px;
+        width: 120px;
+    }
+    .foto:first-child {
+        margin: 0 20px 0 25px;
+    }
+}
+
+/*Computador*/
+@media screen and (min-width: 1024px) {
+    .inicio {
+        flex-direction: row;
+        height: 100vh;
+        padding: 240px 50px 270px 50px;
+    }
+    .secao-destaque {
+        padding: 130px 5px 20px 40px;
+    }
+    .botao {
+        margin: 15px 0 0 110px;
+    }
+    .foto {
+        margin: 80px 20px 0 50px;
+        width: 200px;
+    }
+    .foto:first-child {
+        margin: 80px 20px 0 150px;
+    }
+}

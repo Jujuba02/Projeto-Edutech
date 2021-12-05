@@ -1,0 +1,90 @@
+.sobre {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.edutech {
+    padding-top: 60px;
+    width: 350px;
+}
+
+.bloco {
+    border: 1px solid var(--preto);
+    border-radius: 20px;
+    box-shadow: 10px 5px 5px var(--sombra);
+    display: flex;
+    flex-direction: column;
+    margin: 0 300px 50px 300px;
+    padding: 15px;
+}
+
+.sobre-titulo {
+    color: var(--branco);
+    font-size: 22px;
+    margin: 0 0 15px 250px;
+}
+
+/*Cores destaque*/
+.link-azul {
+    color: var(--azul-alura);
+}
+
+.link-verde {
+    color: var(--verde-edutech);
+}
+
+/*Video*/
+.video {
+    border-radius: 10px;
+    margin:0 0 15px 80px; 
+}
+
+/*Paragrafo*/
+.sobre-p {
+    color: var(--branco);
+}
+
+/*mobile*/
+@media screen and (min-width: 0) {
+    .edutech {
+        padding-top: 70px;
+        width: 250px;
+    }
+    .bloco {
+        margin: 0 0 50px 0;
+    }
+    .sobre-titulo {
+        font-size: 22px;
+        margin: 0 0 15px 70px;
+    }
+    .video {
+        margin: 0 0 20px 0; 
+        width: 100%;
+    }
+}
+
+/*tablet*/
+@media screen and (min-width: 768px) {
+    .edutech {
+        padding-top: 60px;
+        width: 350px;
+    }
+    .sobre-titulo {
+        margin: 0 0 15px 250px;
+    }
+    .video {
+        margin:0 0 15px 90px;
+        width: 560px;
+    }
+}
+
+/*Computador*/
+@media screen and (min-width: 1024px) {
+    .bloco {
+        margin: 0 300px 50px 300px;
+    }
+    .video {
+        margin:0 0 15px 80px;
+    }
+}

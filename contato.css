@@ -1,0 +1,100 @@
+.inicio {
+    align-items: center;
+    color: var(--branco);
+    display: flex;
+    flex-direction: column;
+}
+
+form label, form legend {
+	display: block;
+	font-size: 20px;
+	margin: 0 0 10px;
+}
+
+.input-padrao {
+	border: 1px solid var(--preto);
+    border-radius: 10px;
+    box-shadow: 10px 5px 5px var(--sombra);
+	display: block;
+	margin: 0 0 20px;
+	padding: 10px 100px;
+	width: 50%;
+}
+
+.checkbox {
+	margin: 20px 0;
+}
+
+/*Botao enviar*/
+.enviar {
+	background: var(--verde-edutech);
+	border: none;
+	border-radius: 5px;
+	color: var(--branco);
+	cursor: pointer;
+	font-size: 18px;
+	font-weight: bold;
+    margin-bottom: 50px;
+	padding: 15px 0;
+	transition: 1s all;
+	width: 40%;
+}
+
+.enviar:hover {
+	background: var(--verde-edutech-hover);
+	transform: scale(1.2);
+}
+
+/*Mobile*/
+@media screen and (min-width: 0) {
+    .edutech {
+        padding-top: 70px;
+		width: 250px;
+	}
+	.formulario {
+		margin: 0 15px 0 15px;
+	}
+	.input-padrao {
+		padding: 10px 140px;
+	}
+	.enviar {
+		margin: 10px 80px 50px 55px;
+		width: 60%;
+	}
+}
+
+/*Tablet*/
+@media screen and (min-width: 768px) {
+    .edutech {
+        padding-top: 60px;
+        width: 350px;
+    }
+	.formulario {
+		margin: 0 15px 0 280px;
+	}
+	.input-padrao {
+		padding: 10px 10px 10px 5px;
+	}
+	.enviar {
+		margin: 10px 0 50px 0;
+		width: 60%;
+	}
+}
+
+/*Computador*/
+@media screen and (min-width: 1024px) {
+    .edutech {
+		padding-top: 60px;
+		width: 350px;
+	}
+	.formulario {
+		margin-left: 450px;
+	}
+	.input-padrao {
+		padding: 10px 100px;
+	}
+	.enviar {
+		margin-bottom: 50px;
+		width: 40%;
+	}
+}

@@ -1,0 +1,19 @@
+/*Elementos usados no corpo de todas as paginas*/
+.corpo {
+    background-image: linear-gradient(to bottom right, rgb(0, 0, 0) , rgba(0, 0, 0, 0.63));
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+
+/*Variaveis de cores*/
+:root {
+    --azul-alura: #5959ff;
+    --branco: #ebebeb;
+    --cor-span: #c9c9c9;
+    --preto: #000;
+    --rodape: #202020;
+    --sombra: #0000008f;
+    --titulo-inicio: #969696;
+    --verde-edutech: #1e8f14d5;
+    --verde-edutech-hover: #0a4b06;
+}

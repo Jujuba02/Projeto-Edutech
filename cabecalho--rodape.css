@@ -1,0 +1,66 @@
+/*Cabecalho*/
+.logo-cabecalho{
+    transition: all .5s ease-in-out;
+    width: 80px;
+}
+
+.logo-cabecalho:hover {
+    transform: scale(1.2);
+}
+
+.item {
+    color: var(--branco)!important;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.item:hover {
+    color: var(--verde-edutech)!important;
+}
+
+/*Rodape*/
+.rodape {
+	background-color: var(--rodape);
+	padding: 40px 0;
+}
+
+.rodapePrincipal-patrocinadores .container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.rodapePrincipal-patrocinadores-list {
+    align-items: center;
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+}
+
+/*Responsivo*/
+
+/*Mobile*/
+@media screen and (min-width: 0) {
+    .rodapePrincipal-patrocinadores-list {
+        flex-direction: column;
+    }
+    .logos {
+        margin-bottom: 25px;
+    }
+    .logos:last-child {
+        margin-bottom: 10px;
+    }
+}
+
+/*Tablet*/
+@media screen and (min-width: 768px) {
+    .rodapePrincipal-patrocinadores-list {
+        flex-direction: row;
+    }
+}
+
+/*Computador*/
+@media screen and (min-width: 1024px) {
+    .rodapePrincipal-patrocinadores-list {
+        flex-direction: row;
+    }
+}

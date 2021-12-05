@@ -1,0 +1,168 @@
+.cursos-titulos {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+}
+
+.cursos-titulo {
+    color: var(--branco);
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 48px;
+}
+
+.cursos-subtutilo {
+    color: var(--cor-span);
+    font-size: 20px;
+    margin-bottom: 100px;
+}
+
+.cursos-card {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.icone {
+    border-radius: 50%;
+    height: 4.6em;
+    left: calc(50% - 2.3em);
+    position: absolute;
+    top: -2.3em;
+    width: 4.6em;
+}
+
+/*Cor de botoes e icones de cada card*/
+.icone1, .btn1 {
+    background-color: #70f370;
+    border: solid 2px #70f370;
+}
+
+.btn1:hover {
+    background-color: #60db60;
+    border: solid 2px #60db60;
+}
+
+.icone2, .btn2 {
+    background-color: #40e0b8;
+    border: solid 2px #40e0b8;
+}
+
+.btn2:hover {
+    background-color: #00dfa7;
+    border: solid 2px #00dfa7;
+}
+
+.icone3, .btn3 {
+    background-color: #6495ed;
+    border: solid 2px #6495ed
+}
+
+.btn3:hover {
+    background-color: #4680ec;
+    border: solid 2px #4680ec;
+}
+
+.icone4, .btn4 {
+    background-color: #aa57ca;
+    border: solid 2px #aa57ca
+}
+
+.btn4:hover {
+    background-color: #8f3bb1;
+    border: solid 2px #8f3bb1;
+}
+
+.icone5, .btn5 {
+    background-color: #eb705b;
+    border: solid 2px #eb705b;
+}
+
+.btn5:hover {
+    background-color: #cf4b34;
+    border: solid 2px #cf4b34;
+}
+
+.card-titulo {
+    font-size: 21px;
+    font-weight: bold;
+    padding-top: 2em;
+}
+
+.card-texto {
+    padding-bottom: 15px;
+}
+
+/*Cores do card*/
+.games1 {
+    background-color: #90ee90;
+}
+
+.games2 {
+    background-color: #7effbe;
+}
+
+.htmlCss {
+    background-color: #87cefa;
+}
+
+.mobile {
+    background-color: #ae82c0;
+}
+
+.java {
+    background-color: #f18d7b;
+}
+
+/*Mobile*/
+@media screen and (min-width: 0) {
+    .cursos-titulos {
+        margin: 150px 15px 0 15px;
+    }
+    .cursos-card {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .espacamento {
+        margin: 0 0 80px 0;
+    }
+}
+
+/*Tablet*/
+@media screen and (min-width: 768px) {
+    .cursos-card {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+    }
+    .card-texto3 {
+        padding-bottom: 100px;
+    }
+    .espacamento {
+        margin: 0 40px 80px 50px;
+    }
+    .espacamento:last-child {
+        margin: 0 40px 80px 240px;
+    }
+}
+
+/*Computador*/
+@media screen and (min-width: 1024px) {
+    .cursos-card {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+    }
+    .card-texto3 {
+        padding-bottom: 15px;
+    }
+    .mobile {
+        margin: 0 80px 80px 300px!important;
+    }
+    .java {
+        margin: 0 80px 80px 80px!important;
+    }
+    .espacamento {
+        margin: 0 80px 80px 80px;
+    }
+}
